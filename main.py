@@ -24,10 +24,17 @@ locations = {
 }
 
 
-def download_image(output, location):
+def download_image(input, output):
+    location = ""
+    with open(input, "r") as f:
+        location = f.read().strip()
+
+    if location == "" or location not in locations:
+        print("wrong location")
+
     id = locations[location]
     url = BASE_URL + id
-    print(url)
+    print("url", url)
 
     rsp = requests.get(url, headers=HEADERS)
 
@@ -40,11 +47,13 @@ def download_image(output, location):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("input", help="input filename")
     parser.add_argument("output_without_ext", help="output filename without extension")
-    parser.add_argument("location")
     args = parser.parse_args()
 
-    download_image(args.output_without_ext + ".jpg", args.location)
+    output = args.output_without_ext + ".jpg"
+    print("output", output)
+    download_image(args.input, output)
 
 
 if __name__ == "__main__":
