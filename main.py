@@ -21,6 +21,13 @@ locations = {
     "nguyen_van_cu_tran_hung_dao_2": "5b0b7bbe0e517b00119fd806",
     "nut_giao_nga_sau_cong_hoa": "5deb576d1dc17d7c5515acf7",
     "nut_giao_cong_truong_dan_chu": "5deb576d1dc17d7c5515acf9",
+    "dien_bien_phu_nguyen_huu_canh": "5a606dbc8576340017d0662b",
+    "phan_dang_luu_dinh_tien_hoang": "587ee0ecb807da0011e33d50",
+    "nut_giao_phu_nhuan_1": "58ad6961bd82540010390be5",
+    "le_hong_phong_nguyen_trai": "5d8cd3b7766c880017188942",
+    "nguyen_tri_phuong_nguyen_trai": "5d8cd49f766c880017188944",
+    "tran_hung_dao_nguyen_thai_hoc_2": "5a823bd55058170011f6eaa0",
+    "cong_quynh_pham_viet_chanh": "5efd54b2942cda00169edf73",
 }
 
 
